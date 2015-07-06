@@ -1,7 +1,7 @@
 # Laravel Roles
 Laravel 5 User Role Manager
 
-The idea of this package comes from laracast [laracasts/Users-and-Roles-in-Laravel](https://github.com/laracasts/Users-and-Roles-in-Laravel) and now it is built for laravel 5.
+The idea of this package came from laracast [laracasts/Users-and-Roles-in-Laravel](https://github.com/laracasts/Users-and-Roles-in-Laravel) and now it is built for laravel 5.
 
 ### Requirements
     Laravel >=5.1

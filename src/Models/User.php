@@ -38,7 +38,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      */
     public function roles()
     {
-        return $this->belongsToMany('App\Role')->withTimestamps();
+        return $this->belongsToMany('Appzcoder\LaravelRoles\Models\Role')->withTimestamps();
     }
     /**
      * Does the user have a particular role?

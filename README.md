@@ -30,7 +30,7 @@ Laravel User Role Manager
 
 Use the routes as bellow.
 
-```
+```php
 Route::get('/roles', function () {
 
     /* Create user if needed

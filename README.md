@@ -23,7 +23,7 @@ Laravel User Role Manager
     php artisan vendor:publish --provider="Appzcoder\LaravelRoles\LaravelRolesServiceProvider" --tag="config"
     ```
 
-5. Copy all functions from <a href="hhttps://github.com/appzcoder/laravel-roles/blob/master/src/Models/User.php">this</a> **user model** to your **app's user model**   
+5. Copy all functions from [this] (https://github.com/appzcoder/laravel-roles/blob/master/src/Models/User.php) **user model** to your **app's user model**   
 
 
 ## Usage

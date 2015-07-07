@@ -29,9 +29,9 @@ The idea of this package came from laracast [laracasts/Users-and-Roles-in-Larave
     php artisan vendor:publish
     ```
 
-5. Add the bollow lines to your **user model** located at **app/User.php**
+5. Add the bollow lines to your **user model** located at **/app/User.php**
     ```php
-    // Put the line bofore the class definion after namespace
+    // Put the line bofore the class declaration and after the namespace
     use Appzcoder\LaravelRoles\Traits\RoleTrait;
     
     // Put the line inside of the user class

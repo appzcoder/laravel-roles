@@ -29,8 +29,15 @@ The idea of this package came from laracast [laracasts/Users-and-Roles-in-Larave
     php artisan vendor:publish
     ```
 
-5. Copy all functions from [this] (https://github.com/appzcoder/laravel-roles/blob/master/src/Models/User.php) **user model** to your **app's user model**   
-
+5. Add the bollow lines to your **user model** located at **app/User.php**
+    ```php
+    // Put the line bofore the class definion after namespace
+    use Appzcoder\LaravelRoles\Traits\RoleTrait;
+    
+    // Put the line inside of the user class
+    use RoleTrait;
+    ```
+    
 [Note: Need to configure database and need to run migrate command **php artisan migrate** ]
 
 ## Usage

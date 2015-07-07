@@ -65,7 +65,7 @@ Route::get('/roles', function () {
     return $user->roles;
 });
 
-Route::get('/private', ['middleware' => 'role:admin', 'uses' => 'PrivateController@index']);
+Route::get('/admin', ['middleware' => 'role:admin', 'uses' => 'AdminController@index']);
 ```
 
 ##Author

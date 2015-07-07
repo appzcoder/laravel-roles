@@ -26,11 +26,12 @@ The idea of this package came from laracast [laracasts/Users-and-Roles-in-Larave
 
 4. Publish migrations
     ```
-    php artisan vendor:publish --provider="Appzcoder\LaravelRoles\LaravelRolesServiceProvider" --tag="config"
+    php artisan vendor:publish
     ```
 
 5. Copy all functions from [this] (https://github.com/appzcoder/laravel-roles/blob/master/src/Models/User.php) **user model** to your **app's user model**   
 
+[Note: Need to configure database and need to run migrate command **php artisan migrate** ]
 
 ## Usage
 

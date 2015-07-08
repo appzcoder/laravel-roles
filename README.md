@@ -32,10 +32,10 @@ The idea of this package came from laracast [laracasts/Users-and-Roles-in-Larave
 5. Add the bollow lines to your **user model** located at **/app/User.php**
     ```php
     // Put the line bofore the class declaration and after the namespace
-    use Appzcoder\LaravelRoles\Traits\RoleTrait;
+    use Appzcoder\LaravelRoles\Traits\UserTrait;
     
     // Put the line inside of the user class
-    use RoleTrait;
+    use UserTrait;
     ```
     
 [Note: Need to configure database and need to run migrate command **php artisan migrate** ]

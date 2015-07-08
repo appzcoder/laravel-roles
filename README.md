@@ -22,23 +22,25 @@ The idea of this package came from laracast [laracasts/Users-and-Roles-in-Larave
         Appzcoder\LaravelRoles\LaravelRolesServiceProvider::class,
     ],
     ```
-3. Run **composer update**
 
 4. Publish migrations
     ```
     php artisan vendor:publish
     ```
 
-5. Add the bollow lines to your **user model** located at **/app/User.php**
-    ```php
-    // Put the line bofore the class declaration and after the namespace
-    use Appzcoder\LaravelRoles\Traits\UserTrait;
-    
-    // Put the line inside of the user class
-    use UserTrait;
+4. Run migrate command
+    ```
+    php artisan migrate
     ```
     
-[Note: Need to configure database and need to run migrate command **php artisan migrate** ]
+5. Include **UserTrait** to your **user model** located at **/app/User.php**
+    ```php
+    use Appzcoder\LaravelRoles\Traits\UserTrait;
+    
+    class User extends Model implements AuthenticatableContract, CanResetPasswordContract
+    {
+        use Authenticatable, CanResetPassword, UserTrait;
+    ```
 
 ## Usage
 

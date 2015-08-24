@@ -2,7 +2,7 @@
 
 namespace Appzcoder\LaravelRoles\Traits;
 
-trait UserTrait
+trait UserRoles
 {
 
     /**

@@ -33,13 +33,13 @@ The idea of this package came from laracast [laracasts/Users-and-Roles-in-Larave
     php artisan migrate
     ```
     
-5. Include **UserTrait** to your **user model** located at **/app/User.php**
+5. Include **UserRoles** trait to your **user model** located at **/app/User.php**
     ```php
-    use Appzcoder\LaravelRoles\Traits\UserTrait;
+    use Appzcoder\LaravelRoles\Traits\UserRoles;
     
     class User extends Model implements AuthenticatableContract, CanResetPasswordContract
     {
-        use Authenticatable, CanResetPassword, UserTrait;
+        use Authenticatable, CanResetPassword, UserRoles;
     ```
 
 ## Usage
